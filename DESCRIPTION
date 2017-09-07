@@ -1,0 +1,16 @@
+Package: WOCR
+Type: Package
+Title: Weighted Orthogonal Components Regression (WOCR) Analysis
+Version: 0.1.0
+Author: Xiaogang Su
+Maintainer: Xiaogang Su <xiaogangsu@gmail.com>
+Description: This R packages implements the weighted orthogonal components regression (WOCR), which is a new frameword that encompasses many known methods as special cases, including ridge regression (RR), principal components regression (PCR), partial least squares regression (PLSR), and continuum regression (CR). WOCR makes use of the monotonicity inherent in orthogonal components to parameterize the weight function, which involves low-dimensional (one or two) tuning parameter. The formulation then allows for efficient determination of tuning parameters and hence is computationally advantageous. Moreover, WOCR offers insights for deriving new better variants. In this current version, only the principal components (such as in RR and PCR) are considered.
+License: GPL-2
+Depends:
+    R (>= 3.2.5)
+Imports:
+    GenSA (>= 1.1.6),
+    numDeriv (>= 2014.2-1),
+    pls (>= 0.1.0)
+LazyData: TRUE
+RoxygenNote: 6.0.1
